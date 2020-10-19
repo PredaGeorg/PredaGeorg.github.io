@@ -1,63 +1,237 @@
-<!-- This file is my first attempt at creating a webpage as a personal project -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <script src="https://kit.fontawesome.com/d525423be0.js" crossorigin="anonymous"></script>
-  <meta charset="utf-8">
-  <title>My First Webpage</title>
-</head>
-<body>
-  <header>
-    <i class="fas fa-adjust fa-lg"></i>
-    <h1>This is the header of my page</h1>
-    <p> Welcome to my website. I am a recent graduate from Durham University
-      with a master's degree in Physics. I then spent 7 months in Bolivia
-      working as a journalist at The Bolivian Express and learning Spanish.
-      You can find my articles <a href=articles.html>here</a>. 
-      I am currently working as an online tutor for MyTutor while looking for
-      graduate roles in technology.
-    <figure>
-      <img src="graduation.jpg" alt="Me on my graduation day" width="30%">
-      <figcaption>Default image size</figcaption>
-    </figure>
-    <aside> I am undertaking this project because I want to become a software engineer.
-    </aside>
-    <p> to write &, you need to use encoding. </p>
-    </header>
-  <main>
-    <span>testing span</span>
-    <span>Still trying to figure it out</span>
-    <div> Here I have placed a division </div>
-    <div> and here another </div>
+  <head>
+    <script src="https://kit.fontawesome.com/d525423be0.js" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <p> This is my main code </p>
-    <table border="1">
-      <thead>
-      <tr><th>0</th><th>1</th><th>2</th><th>3</th></tr>
-      </thead>
-      <tfoot>
-      <tr><td>a</td><td>a1</td><td>a2</td><td>a3</td></tr>
-      <tr><td>b</td><td>b1</td><td>b2</td><td>b3</td></tr>
-      <tr><td>c</td><td>c1</td><td>c2</td><td>c3</td></tr>
-      </tfoot>
-      <caption>Test table</caption>
-    </table>
-  <hr></hr>
-  </main>
-  <footer>
-    <button>self-destruct</button>
-    <meter min="0" max="100" value="60">50%</meter>
-    <p> This the footer part of the page </p>
-    <ol>
-    <li>Vegetables</li>
-    <li>Fruit
-       <ul>
-          <li>Blueberries</li>
-	  <li>Bananas</li>
-       </ul>
-    </li>
-</ol>
-  </footer>
-  <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter fa-5x"></i></a>
-</body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <title>george fearnley</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+    	<a class="navbar-brand" href="index.html">george fearnley</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education.html">education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experience.html">experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articles.html">articles</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="welcome">
+      <div class="container justify-content-center padding">
+        <div class="row justify-content-center align-items-center pt-5">
+          <div id='pic' class="col-md-4 col-xl-3 justify-content-end pt-2 pt-md-5 align-self-end align-self-md-center pb-3 pb-md-0">
+            <div class="thumbnail text-center justify-content-center">
+              <a href='#'><img class="avatar" src="imgs/graduation.jpg" alt="george-graduating">
+              </a>
+            </div>
+            <div class="social text-center justify-content-center pt-2">
+              <a class="px-1" href="https://uk.linkedin.com/in/george-fearnley-4bb576153" aria-label="linkedin">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a class="px-1" href="https://github.com/PredaGeorg" aria-label="github">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8 text-center text-md-left align-self-start align-self-md-center pt-1 pt-md-5 pr-1 pr-md-2">
+            <h1 class="pb-3">George Fearnley
+            </h1>
+            <p>
+                Welcome to my webpage! I recently graduated from Durham University
+                  with a master's degree in Physics. I then spent 7 months in Bolivia
+                  working as a journalist at The Bolivian Express and learning Spanish.
+                  I am currently working as an online tutor for MyTutor while looking for
+                  graduate roles in technology. Specifically, roles in software engineering
+                  or data science.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <!-- Double column education section -->
+
+    <main>
+      <div class="container-fluid padding">
+        <div class="row padding">
+          <div class="col-lg-6">
+            <h2>Education</h2>
+            <p> After studying maths, physics and chemistry at school I went on to
+              study Physics at Durham University.</p>
+            <p>I particularly enjoyed modules with an element of programming</p>
+            <p>Recently I have been using cousera to gain knowledge and Experience
+              in software engineering. I used what I learned from the webdevelopment
+            for all coursera specialisation to build this website. </p>
+            <br>
+            <a href="#" class="btn btn-light">More info</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="imgs/durhamRiver.jpg" class="img-fluid rounded home-pic">
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <!-- Double Column Experience Section -->
+
+      <div class="container-fluid padding">
+        <div class="row padding">
+          <div class="col-lg-6 order-lg-last">
+            <h2>Experience</h2>
+            <p> After studying maths, physics and chemistry at school I went on to
+              study Physics at Durham University.</p>
+            <p>I particularly enjoyed modules with an element of programming</p>
+            <p>Recently I have been using cousera to gain knowledge and Experience
+              in software engineering. I used what I learned from the webdevelopment
+            for all coursera specialisation to build this website.</p>
+            <br>
+            <a href="#" class="btn btn-light">More info</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="imgs/cochabamba.jpg" class="img-fluid rounded home-pic">
+          </div>
+        </div>
+      </div>
+
+      <!-- <figure>
+        <div class="fixed-wrap">
+          <div id="fixed">
+          </div>
+        </div>
+      </figure> -->
+
+      <hr class="my-4">
+
+      <!-- Article sections cards -->
+
+      <div class="container-fluid padding pb-0">
+        <div class="row text-center">
+          <div class="col-12">
+            <h2>Articles</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid padding">
+        <div class="row padding">
+
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="imgs/chacaltaya1.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Chacaltaya Observatory</h4>
+                <p class="card-text">Climate Change from Chacaltaya. <br/>
+                  Dr. Marcos Andrade recalls a satirical television show he once
+                  watched whereby viewers were humorously reassured...
+                  </p>
+                <a href="http://www.bolivianexpress.org/blog/posts/watching-the-world-breathe"
+                class="btn btn-outline-secondary">See more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="imgs/pizza1.jpg">
+              <div class="card-body">
+                <h4 class="card-title">Imilla Alzada</h4>
+                <p class="card-text">How Bolivia’s most authentic pizzas are being
+                  made in Cota Cota.<br/>
+                  This year, the Big 7 Travel website ranked the pizza at La Paz’s
+                  Imilla Alzada....
+                </p>
+                <a href="http://www.bolivianexpress.org/blog/posts/a-slice-of-naples-in-la-paz"
+                class="btn btn-outline-secondary">See more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="imgs/nasa1.jpg">
+              <div class="card-body">
+                <h4 class="card-title">NASA Rover Challenge</h4>
+                <p class="card-text">Bolivians demonstrate their talent at international
+                  NASA competition. <br/>
+                  In 2017, NASA, the US space agency, stated its aim to put ‘the first
+                  woman and...
+                  </p>
+                <a href="http://www.bolivianexpress.org/blog/posts/young-space-scientists-leave-their-boot-prints-in-"
+                class="btn btn-outline-secondary">See more</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+
+    <footer>
+      <div class="container-fluid padding border-top">
+        <div class="row text-center">
+          <div class="col-12">
+            <h5> george fearnley</h5>
+            <p class="social">
+              <a class="px-1" href="https://uk.linkedin.com/in/george-fearnley-4bb576153" aria-label="linkedin">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a class="px-1" href="https://github.com/PredaGeorg" aria-label="github">
+                <i class="fab fa-github"></i>
+              </a>
+            </p>
+            <p class="contact">
+              Contact: <a href="mailto:georgefearnley@hotmail.com">
+                <i class="fas fa-envelope"></i> georgefearnley@hotmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  </body>
 </html>
