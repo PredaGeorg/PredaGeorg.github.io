@@ -1,0 +1,148 @@
+
+html, body{
+  height:100%;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav li{
+  padding-right: 1.4rem;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+}
+
+.navbar-brand{
+  font-size: 1.4rem;
+}
+
+.padding{
+  padding: 1.3rem 2.5rem;
+}
+
+.contact{
+  text-decoration: none;
+  font-size:1.2rem;
+}
+
+.contact a{
+  color: #888888;
+}
+
+.contact a:hover{
+  text-decoration: none;
+  color: #222222;
+}
+
+#welcome{
+  background:#f8f8f8;
+  padding-top:3rem;
+  padding-bottom:5rem;
+  border-bottom: solid #eeeeee;
+}
+
+.title{
+  margin-top:4rem;
+}
+
+.logo{
+  width:50px;
+}
+
+div.subheading h3{
+  font-size: 1rem;
+}
+
+div.subheading div:first-child{
+  font-size: 1.2rem;
+}
+
+footer{
+  background: #f8f8f8;
+}
+
+.social a{
+  color: #888888;
+  font-size: 1.3rem;
+}
+
+.social a:hover{
+  color: #222222;
+}
+
+.title{
+  margin-top:5rem;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  border: solid #666666;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px black;
+}
+
+.home-pic{
+  padding-top:1.5rem;
+}
+
+.card{
+  margin-top:1.2rem;
+}
+
+/*---Media Queries --*/
+
+/* @media (min-width: 576px){
+  .card{
+    margin-top:0;
+  }
+} */
+
+@media (min-width: 768px) {
+  .home-pic{
+    padding-left:4rem;
+    padding-right:4rem;
+  }
+  .card{
+    margin-top:0;
+  }
+  .logo{
+    width:80px;
+  }
+  .subheading h3{
+    line-height: 1.8rem;
+  }
+  .content{
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .home-pic{
+    padding-top:0;
+    padding-left:0;
+    padding-right:0
+  }
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
