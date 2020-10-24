@@ -91,6 +91,10 @@ footer{
   margin-bottom: 4rem;
 }
 
+.entry:last-child{
+  margin-bottom: 600px;
+}
+
 .list-group-item.active{
   color: #333333;
   background-color: #eeeeee;
