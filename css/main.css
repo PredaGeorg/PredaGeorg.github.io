@@ -100,6 +100,12 @@ footer{
   margin-bottom: 4rem;
 }
 
+.list-group-item.active{
+  color: #333333;
+  background-color: #eeeeee;
+  border-color: #bbbbbb;
+}
+
 /*---Media Queries --*/
 
 /* @media (min-width: 576px){
@@ -126,6 +132,9 @@ footer{
     margin-top: 2rem;
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+  #list-experience{
+    position:fixed;
   }
 
 }
