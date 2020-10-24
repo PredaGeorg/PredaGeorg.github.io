@@ -100,12 +100,6 @@ footer{
 
 /*---Media Queries --*/
 
-/* @media (min-width: 576px){
-  .card{
-    margin-top:0;
-  }
-} */
-
 @media (min-width: 768px) {
   .home-pic{
     padding-left:4rem;
@@ -125,7 +119,7 @@ footer{
     margin-left: 5rem;
     margin-right: 5rem;
   }
-  #list-experience, #list-experience{
+  #list-experience, #list-education{
     position:fixed;
   }
 }
