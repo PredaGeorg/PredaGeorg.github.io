@@ -18,6 +18,7 @@
 
 
 <body>
+
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">george fearnley</a>
@@ -42,107 +43,115 @@
     </div>
   </nav>
 
-<header class="title">
-  <div class="container-fluid">
-    <div class="row padding text-center">
-      <h2 class="col-12">Education</h2>
-    </div>
-  </div>
-</header>
-
-<main>
-  <div class="container-fluid">
-    <div class="row padding">
-      <div class="col-3 col-md-2 text-right">
-        <img src="imgs/durham.png" alt="Durham University emblem" class="logo">
-      </div>
-      <div class="col-9 subheading">
-        <h3>
-          <div>MPhys (Physics), 2:1</div>
-          <div>Durham University </div>
-          <div>2015-2019</div>
-        </h3>
-      </div>
-      <div class="p-1 content">
-        <p> About a year ago I completed an integrated master's degree in Physics
-          (MPhys) at Durham University, graduating with a 2:1. Below are the
-          the titles of the modules I completed that had programming at their core:
-            <ul>
-                <li>Year 1 - Introduction to Programming (86%)</li>
-                <li>Year 2 - Computational Physics (93%)</li>
-                <li>Year 3 - Computing Project (72%)</li>
-                <li>Year 4 - Final Project (73%)</li>
-           </ul>
-         </p>
-         <p>Final year project involved using Python to computationally model
-          a novel way to launch a space rocket with the goal of reaching the
-          nearest star system within 50 years. It involved the extensive use of
-          jupyter notebooks to perform caluclations along with data analysis and
-          visualisation.
-        </p>
+  <header class="title">
+    <div class="container-fluid">
+      <div class="row padding text-center">
+        <h2 class="col-12">Education</h2>
       </div>
     </div>
-  </div>
+  </header>
 
-  <hr class="my-4">
+  <main>
+    <div class="container-fluid">
+      <div class="row padding justify-content-center">
 
-  <div class="container-fluid">
-    <div class="row padding">
-      <div class="col-3 col-md-2 text-right">
-        <img src="imgs/tbgs.jpg" alt="tbgs logo" class="logo">
-      </div>
-      <div class="col-9 subheading">
-        <h3>
-          <div>A-Levels and GCSEs</div>
-          <div>Torquay Boys' Grammar School</div>
-          <div>2007-2014</div>
-        </h3>
-      </div>
-      <div class="p-1 content">
-        <p> A-Levels:
-          <ul>
-            <li>A2: Mathematics [A*], Physics [A*], Chemistry [A*]</li>
-            <li>AS: Further Mathematics [A], Philosophy [A]</li>
-          </ul>
-        </p>
-        <p>GCSEs:
-          <ul>
-            <li>10 A*s, 2 A’s including Mathematics [A*], English Language [A*]
-            and Spanish [A*].</li>
-          </ul>
-        </p>
+        <div class="col-md-3 mb-5">
+
+          <div id="list-education" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-3">MPhys Durham</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">A-Levels & GCSEs</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Further Education</a>
+          </div>
+
+        </div>
+
+        <div class="col-md-7">
+
+          <div data-spy="scroll" data-target="#list-experience" data-offset="0" class="scrollspy-entries">
+
+            <div class="entry" id="list-item-3" >
+              <div class="media">
+                <a href="https://www.dur.ac.uk">
+                  <img src="imgs/durham.png" class="mr-3 logo" alt="Durham University emblem">
+                </a>
+                <div class="media-body">
+                  <h3 class="mt-0">MPhys (Physics), 2:1</h3>
+                    <h5>Durham University </h5>
+                    <h6>2015-2019</h6>
+                </div>
+              </div>
+              <hr>
+              <p> About a year ago I completed an integrated master's degree in Physics
+                (MPhys) at Durham University, graduating with a 2:1. Below are the
+                the titles of the modules I completed that had programming at their core:
+                  <ul>
+                      <li>Year 1 - Introduction to Programming (86%)</li>
+                      <li>Year 2 - Computational Physics (93%)</li>
+                      <li>Year 3 - Computing Project (72%)</li>
+                      <li>Year 4 - Final Project (73%)</li>
+                 </ul>
+               </p>
+               <p>Final year project involved using Python to computationally model
+                a novel way to launch a space rocket with the goal of reaching the
+                nearest star system within 50 years. It involved the extensive use of
+                jupyter notebooks to perform caluclations along with data analysis and
+                visualisation.
+              </p>
+            </div>
+
+            <div class="entry" id="list-item-2" >
+              <div class="media">
+                <a href="https://www.tbgs.co.uk/">
+                  <img src="imgs/tbgs.jpg" class="mr-3 logo" alt="tbgs logo">
+                </a>
+                <div class="media-body">
+                  <h3 class="mt-0">A-Levels and GCSEs</h3>
+                    <h5>Torquay Boys' Grammar School</h5>
+                    <h6>2007-2014</h6>
+                </div>
+              </div>
+              <hr>
+              <p> A-Levels:
+                <ul>
+                  <li>A2: Mathematics [A*], Physics [A*], Chemistry [A*]</li>
+                  <li>AS: Further Mathematics [A], Philosophy [A]</li>
+                </ul>
+              </p>
+              <p>GCSEs:
+                <ul>
+                  <li>10 A*s, 2 A’s including Mathematics [A*], English Language [A*]
+                  and Spanish [A*].</li>
+                </ul>
+              </p>
+            </div>
+
+
+            <h2 id="list-item-1">Further Education</h2>
+
+            <div class="entry" id="list-item-1a" >
+              <div class="media">
+                <a href="https://www.tbgs.co.uk/">
+                  <img src="imgs/coursera.png" class="mr-3 logo" alt="Coursera logo">
+                </a>
+                <div class="media-body">
+                  <h3 class="mt-0">Basics of Web Development and Coding</h3>
+                    <h5>University of Michigan</h5>
+                    <h6>August 2020-present</h6>
+                </div>
+              </div>
+              <hr>
+              <p>I am learning how to Build a responsive and accessible web portfolio
+                using HTML5, CSS3, and JavaScript.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
 
-  <hr class="my-4">
-
-  <div class="container-fluid">
-    <div class="row padding ml-md-3">
-      <h3 class="col-12">Further Education</h3>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row padding">
-      <div class="col-3 col-md-2 text-right">
-        <img src="imgs/coursera.png" alt="Coursera logo" class="logo">
-      </div>
-      <div class="col-9 subheading">
-        <h3>
-          <div>Basics of Web Development and Coding</div>
-          <div>University of Michigan</div>
-          <div>August 2020-present</div>
-        </h3>
-      </div>
-      <div class="p-1 content">
-        <p>I am learning how to Build a responsive and accessible web portfolio
-          using HTML5, CSS3, and JavaScript.
-        </p>
-      </div>
-    </div>
-  </div>
-
+  </main>
 
 
   <footer>
@@ -178,6 +187,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
   crossorigin="anonymous"></script>
+  <script src="/scripts/ScrollspyHeight.js"></script>
 
 </body>
 </html>
