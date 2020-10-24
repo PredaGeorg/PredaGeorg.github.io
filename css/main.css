@@ -118,7 +118,10 @@ footer{
     margin-left: 5rem;
     margin-right: 5rem;
   }
-  #list-experience, #list-education{
+  #list-experience{
+    position:fixed;
+  }
+  #list-education{
     position:fixed;
   }
 }
