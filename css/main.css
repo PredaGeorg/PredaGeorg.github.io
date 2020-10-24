@@ -91,6 +91,15 @@ footer{
   margin-top:1.2rem;
 }
 
+.scrollspy-entries{
+  position:relative;
+  overflow-y: scroll;
+}
+
+.entry{
+  margin-bottom: 4rem;
+}
+
 /*---Media Queries --*/
 
 /* @media (min-width: 576px){
