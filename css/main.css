@@ -50,14 +50,6 @@ html, body{
   width:50px;
 }
 
-div.subheading h3{
-  font-size: 1rem;
-}
-
-div.subheading div:first-child{
-  font-size: 1.2rem;
-}
-
 footer{
   background: #f8f8f8;
 }
@@ -133,10 +125,9 @@ footer{
     margin-left: 5rem;
     margin-right: 5rem;
   }
-  #list-experience{
+  #list-experience, #list-experience{
     position:fixed;
   }
-
 }
 
 @media (min-width: 992px) {
@@ -146,21 +137,3 @@ footer{
     padding-right:0
   }
 }
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
