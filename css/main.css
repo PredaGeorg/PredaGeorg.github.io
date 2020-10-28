@@ -91,9 +91,6 @@ footer{
   margin-bottom: 4rem;
 }
 
-.entry:last-child{
-  margin-bottom: 600px;
-}
 
 .list-group-item.active{
   color: #333333;
@@ -101,6 +98,9 @@ footer{
   border-color: #bbbbbb;
 }
 
+.tech-icons img{
+  margin: auto 1.5rem;
+}
 /*---Media Queries --*/
 
 @media (min-width: 768px) {
@@ -127,6 +127,12 @@ footer{
   }
   #list-education{
     position:fixed;
+  }
+  .entry:last-child{
+    margin-bottom: 600px;
+  }
+  main div.row{
+    padding: 1.3rem 2.5rem;
   }
 }
 
